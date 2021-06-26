@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let a = 2;
+        let x = 1 + (a *= 2);
+        /* 1. первым выполнится вырожение в скобках a *= 2 теперь a = 4 (работает как a = a * 2)
+            2. 1 + а(а=4) = 5
+            3. ответ запишиться в х = 5
+        */
+    </script>
+</body>
+
+</html>

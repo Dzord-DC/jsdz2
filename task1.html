@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        /*Префиксный инкремент сначало увеличит переменную а на 1, 
+        после значение а присвоиться в переменную с
+        */
+        alert(c);//ответ 2
+        d = b++;
+        /*При использовании постфиксного инкремента сначало в d запишиться b, 
+        и после этого  b увеличиться на 1
+       */
+        alert(d)
+        c = 2 + ++a;
+        /*Префиксный инкремент сначало увеличит переменную а на 1,  
+        после сложет с 2 и ответ запишит в с*/
+        alert(c);
+        /*При использовании постфиксного инкремента сначало в d сложиться с 2
+         и опвет запишиться в d 
+        и после этого  b увеличиться на 1
+       */
+        d = 2 + b++;
+        alert(d);
+        alert(a);
+        alert(b);
+    </script>
+</body>
+
+</html>

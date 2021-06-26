@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        function sum(a, b) {
+            return a + b;
+        }
+        function minus(a, b) {
+            return a - b;
+        }
+        function multip(a, b) {
+            return a * b;
+        }
+        function division(a, b) {
+            return a / b;
+        }
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "сумма":
+                    alert("Сумма " + sum(arg1, arg2));
+                    break;
+                case "разность":
+                    alert("Разность " + minus(arg1, arg2));
+                    break;
+                case "произведение":
+                    alert("Произведение " + multip(arg1, arg2));
+                    break;
+                case "деление":
+                    alert("Деление " + division(arg1, arg2));
+                    break;
+            }
+        }
+
+        let x = +prompt("Введите число а");
+        let y = +prompt("Введите число b");
+        let operation = prompt("насвание операции").toLowerCase();
+        mathOperation(x, y, operation);
+    </script>
+</body>
+
+</html>
